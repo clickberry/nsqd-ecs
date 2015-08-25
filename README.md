@@ -8,4 +8,4 @@ your container.
 
 ## Solution
 Our Dockerfile overrides standard container ENTRYPOINT to dynamicly retrieve public ip address of the container and start
-nsqd with proper `-broadcast-address` flag.
+nsqd with proper `-broadcast-address` flag. So you can create ECS service based on the `clickberry/nsqd-ecs` image and scale it safely, because all instantiated docker containers will set propert `-broadcast-address` automatically for you. Enjoy! 
