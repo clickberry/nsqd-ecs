@@ -2,8 +2,8 @@
 ECS optimized nsqd image.
 
 ## Problem
-When you use official `nsqio/nsqd` image to instanciate nsqd container in Amazon ECS you should provide command 
-`-broadcast-address` to proper register nsqd in nsqlookupd. But you don't know which EC2 instance will be used to host
+When you use official `nsqio/nsqd` image to instantiate nsqd container in Amazon ECS you should provide flag 
+`-broadcast-address` to proper register nsqd in nsqlookupd. But you don't know exactly which EC2 instance will be used to host
 your container.
 
 ## Solution
