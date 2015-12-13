@@ -1,4 +1,4 @@
-FROM nsqio/nsqd
+FROM nsqio/nsq
 
 ADD ./docker-entrypoint.sh /
 RUN chmod +x ./docker-entrypoint.sh
